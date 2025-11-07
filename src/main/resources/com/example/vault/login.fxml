@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.example.vault.gui.LoginController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    
+    <Label fx:id="titleLabel" style="-fx-font-size: 20;" text="Password Vault"/>
+    <Label fx:id="messageLabel" style="-fx-text-fill: red;"/>
+    
+    <GridPane vgap="10" hgap="10">
+        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+        
+        <Label text="Master Password:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label fx:id="confirmLabel" text="Confirm Password:" visible="false" 
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <PasswordField fx:id="confirmField" visible="false"
+                      GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    </GridPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="loginButton" text="Login" onAction="#handleLogin"/>
+        <Button fx:id="registerButton" text="Register" onAction="#handleRegister"/>
+    </HBox>
+</VBox>

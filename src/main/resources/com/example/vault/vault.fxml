@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.example.vault.gui.VaultController"
+      spacing="10" style="-fx-padding: 20;">
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label style="-fx-font-size: 20;" text="Password Vault"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="searchField" promptText="Search term..." />
+        <Button text="Add New" onAction="#handleAdd"/>
+        <Button text="Search" onAction="#handleSearch"/>
+        <Button text="Logout" onAction="#handleLogout"/>
+    </HBox>
+    
+    <TableView fx:id="credentialsTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="serviceColumn" text="Service" prefWidth="150"/>
+            <TableColumn fx:id="usernameColumn" text="Username" prefWidth="150"/>
+            <TableColumn fx:id="passwordColumn" text="Password" prefWidth="150"/>
+            <TableColumn fx:id="actionsColumn" text="Actions" prefWidth="100"/>
+        </columns>
+    </TableView>
+</VBox>
